@@ -40,6 +40,10 @@ namespace Telefonbook_form
 			this.number = Number;
 		}
 		
+		public int getNumber()
+		{
+			return number;
+		}
 	}
 	public class PhoneBook
 	{
