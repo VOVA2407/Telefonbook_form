@@ -1,0 +1,12 @@
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\Telefonbook_form\obj\Debug\Telefonbook_form.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\Telefonbook_form\bin\Debug\Telefonbook_form.exe
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\Telefonbook_form\bin\Debug\Telefonbook_form.pdb
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\Telefonbook_form\obj\Debug\Telefonbook_form.exe
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\Telefonbook_form\obj\Debug\Telefonbook_form.pdb
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\Telefonbook_form\obj\Debug\Telefonbook_form.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\obj\Debug\Telefonbook_form.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\obj\Debug\Telefonbook_form.telefonist.resources
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\obj\Debug\Telefonbook_form.csproj.GenerateResource.Cache
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\obj\Debug\Telefonbook_form.exe
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\obj\Debug\Telefonbook_form.pdb
+C:\Users\Admin\Documents\SharpDevelop Projects\Telefonbook_form\Telefonbook_form\obj\Debug\Telefonbook_form.telefonist.resources
