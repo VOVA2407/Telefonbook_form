@@ -24,17 +24,20 @@ namespace Telefonbook_form
 		//человек, который работает с телефонной книгой
 		private string name;
 		private int number;
-		private string car; //поле для get и set. Вводим марку авто телефониста.
+		private string car = "peshehod"; //поле для get и set. Вводим марку авто телефониста.
 		static string filial; //сразу прикрепояем сотрудника к отделению АТС
 		public static readonly uint daytime; //время суток. День или ночь, чтобы определить смену телефониста, 1 - день, 0 - ночь
 		
 		//Создаём статический конструктор, которым определяем отделение АТС телефониста
-		static telefonist()
+		/*static telefonist()
 		{
 			daytime = daytime; // 1 - день, 0 - ночь
 			filial = filial;
-		} // этот контруктор будет вызван перед созданием экземпляра класса и перед первым образением к dt
-		
+		} */// этот контруктор будет вызван перед созданием экземпляра класса и перед первым образением к dt
+		public telefonist(string Name)
+		{
+			name = Name;
+		}
 		//ниже идут методы доступа к данным класса.Здесь мы можем заложить принципы защиты даннных
 		public string Name() // т.к. тут только return, то обращение к данному мтеоды в основной программе будет как string var = Book.Name()
 		{
@@ -96,6 +99,7 @@ namespace Telefonbook_form
 	}//end of class PhoneBook
 	public partial class MainForm : Form
 	{
+		telefonist Vasya = new telefonist("Vasya");
 		public static bool rus = false;
 	public static bool eng = false;
 		public MainForm()
@@ -158,6 +162,20 @@ namespace Telefonbook_form
 		void Button2Click(object sender, EventArgs e)
 		{
 			
+		}
+		
+		
+		void TextBox2KeyPress(object sender, KeyPressEventArgs e)
+		{
+			if (e.KeyChar == Convert.ToChar(Keys.Return))
+			{
+				Vasya.Car = textBox2.Text;;
+			}
+		}
+		
+		void Button3Click(object sender, EventArgs e)
+		{
+				textBox3.Text = Vasya.Car;	
 		}
 	}
 }
