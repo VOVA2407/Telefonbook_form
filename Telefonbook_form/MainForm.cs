@@ -23,37 +23,44 @@ namespace Telefonbook_form
 	{
 		//человек, который работает с телефонной книгой
 		private string name;
-		private string number;
-		private string car; //для get и set. Вводим марку авто телефониста.
+		private int number;
+		private string car; //поле для get и set. Вводим марку авто телефониста.
 		static string filial; //сразу прикрепояем сотрудника к отделению АТС
 		public static readonly uint daytime; //время суток. День или ночь, чтобы определить смену телефониста, 1 - день, 0 - ночь
 		
 		//Создаём статический конструктор, которым определяем отделение АТС телефониста
-		static telefonist(string Filial, uint Daytime)
+		static telefonist()
 		{
-			this.daytime = Daytime; // 1 - день, 0 - ночь
-			this.filial = Filial;
-		} // этот контрукто рбудет вызван перед созданием экземпляра класса и перед первым образением к dt
+			daytime = daytime; // 1 - день, 0 - ночь
+			filial = filial;
+		} // этот контруктор будет вызван перед созданием экземпляра класса и перед первым образением к dt
 		
 		//ниже идут методы доступа к данным класса.Здесь мы можем заложить принципы защиты даннных
-		public string Name()
+		public string Name() // т.к. тут только return, то обращение к данному мтеоды в основной программе будет как string var = Book.Name()
 		{
 			return name;
 		}
-		
 		public void setName(string Name)
 		{
-			this.name = Name;
+			if (Name.Length > 9 )
+				Console.WriteLine("Ошибка: длина имени больше 9");
+			else
+				this.name = Name;
 		}
-		
 		public void setNumber(int Number)
 		{
 			this.number = Number;
 		}
-		
 		public int getNumber()
 		{
 			return number;
+		}
+		
+		//Далее используем свойства. Свойства - упрощенные синтаксически методы доступа к полям класса
+		public string Car
+		{
+			get { return car;}
+			set { car = value;}
 		}
 	}
 	public class PhoneBook
