@@ -24,7 +24,18 @@ namespace Telefonbook_form
 		//человек, который работает с телефонной книгой
 		private string name;
 		private string number;
+		private string car; //для get и set. Вводим марку авто телефониста.
+		static string filial; //сразу прикрепояем сотрудника к отделению АТС
+		public static readonly uint daytime; //время суток. День или ночь, чтобы определить смену телефониста, 1 - день, 0 - ночь
 		
+		//Создаём статический конструктор, которым определяем отделение АТС телефониста
+		static telefonist(string Filial, uint Daytime)
+		{
+			this.daytime = Daytime; // 1 - день, 0 - ночь
+			this.filial = Filial;
+		} // этот контрукто рбудет вызван перед созданием экземпляра класса и перед первым образением к dt
+		
+		//ниже идут методы доступа к данным класса.Здесь мы можем заложить принципы защиты даннных
 		public string Name()
 		{
 			return name;
