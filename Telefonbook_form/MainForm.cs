@@ -17,6 +17,8 @@ namespace Telefonbook_form
 	//29.05 тест перед отработкой ветвления
 	// второй коммент для ветки testing
 	//третий коммент для ветки trsting
+	//тест десктопного приложения
+	//novii comment
 	/// <summary>
 	/// Description of MainForm.
 	/// </summary>
