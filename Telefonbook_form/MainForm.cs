@@ -14,7 +14,7 @@ using System.Windows.Forms;
 ///ust a comment
 namespace Telefonbook_form
 {
-	
+	//29.05 тест перед отработкой ветвления
 	/// <summary>
 	/// Description of MainForm.
 	/// </summary>
@@ -22,12 +22,12 @@ namespace Telefonbook_form
 	public class telefonist
 	{
 		//человек, который работает с телефонной книгой
-		private string name;
-		private int number;
-		private string car = "peshehod"; //поле для get и set. Вводим марку авто телефониста.
+		private string name; // имя телефониста. Василий, напр.
+		private int number; // табельный номер телефониста
+		/*// это поле убрали из-за  get и set //*/private string car = "peshehod"; //поле для get и set. Вводим марку авто телефониста.
 		static string filial; //сразу прикрепояем сотрудника к отделению АТС
 		public static readonly uint daytime; //время суток. День или ночь, чтобы определить смену телефониста, 1 - день, 0 - ночь
-		
+		private float zp = 50; // зарплата
 		//Создаём статический конструктор, которым определяем отделение АТС телефониста
 		/*static telefonist()
 		{
@@ -60,11 +60,7 @@ namespace Telefonbook_form
 		}
 		
 		//Далее используем свойства. Свойства - упрощенные синтаксически методы доступа к полям класса
-		public string Car
-		{
-			get { return car;}
-			set { car = value;}
-		}
+		public string Car {get; set;}
 	}
 	public class PhoneBook
 	{
